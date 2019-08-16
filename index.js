@@ -7,7 +7,7 @@ const index = require('./index.json');
 
 bot.on('ready', function () {
     console.log("Je suis prêt à être utilisé.")
-    bot.user.setActivity('$help > MpBot').catch(console.error)
+    bot.user.setActivity('$help > Papers Bot').catch(console.error)
 });
 
 bot.on ('message', message => {
