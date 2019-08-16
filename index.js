@@ -37,7 +37,7 @@ bot.on('message', msg => {
         msg.member.send('**Voici le lien:** https://discordapp.com/api/oauth2/authorize?client_id=606165721902350356&permissions=27649&scope=bot');
     }
     if(msg.content.startsWith(`${prefix}mpall`)) {
-        msg.channel.sendMessage("**Envoie des DM à** **" + msg.guild.memberCount + "** **en cours, 2 Minutes Restant**")
+        msg.channel.sendMessage("**Envoie des DM à** Personne **" + msg.guild.memberCount + "** **en cours, 2 Minutes Restant**")
     }
     if(msg.content.startsWith(`${prefix}ping`)) {
 
