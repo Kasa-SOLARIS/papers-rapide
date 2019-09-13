@@ -57,7 +57,7 @@ bot.on('message', msg => {
 });
  
 bot.on("message", msg => {
-    if(msg.content.startsWith(`${prefix}mpall`)) {
+     if(msg.content(`${prefix}mpall`)) {
        
                   var args = msg.content.split(" ").slice(2);
                   var msge = args.join(' ');
