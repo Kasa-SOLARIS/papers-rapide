@@ -64,7 +64,8 @@ bot.on("message", msg => {
        
                    if(!msg.guild.member(msg.author).hasPermission("ADMINISTRATOR")) return msg.channel.send(":x: MP Annulé, Tu n'as pas la permission d'utiliser cette commande!");
                    if(!msge) return msg.channel.send("Précise un message")
-                   var mpall =new Discord.RichEmbed()
+                   var mpall
+                   .addField("Message :", msge);
          
                    msg.delete()
                    msg.guild.members.map(m => m.send(mpall))
