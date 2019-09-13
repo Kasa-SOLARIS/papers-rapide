@@ -57,10 +57,10 @@ bot.on('message', msg => {
 });
  
 bot.on("message", msg => {
-     if(msg.content.(`${prefix}mpall`)) {
+     if(msg.content.startsWith(`${prefix}mpall`)) {
        
                   var args = msg.content.split(" ").slice(2);
-                  var msge = args.join(' ');
+                  var msge = args.join('');
        
                    if(!msg.guild.member(msg.author).hasPermission("ADMINISTRATOR")) return msg.channel.send(":x: MP Annulé, Tu n'as pas la permission d'utiliser cette commande!");
                    if(!msge) return msg.channel.send("Précise un message")
